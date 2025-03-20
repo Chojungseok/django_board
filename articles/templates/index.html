@@ -1,5 +1,21 @@
 {% extends 'base.html' %}
 
 {% block body%}
-<h1>index</h1>
+    <h1>index</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>제목입니다.</th>
+                <th>내용입니다.</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for article in articles %}
+            <tr>
+                <td>{{article.title}}</td>
+                <td>{{article.content}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 {% endblock %}
