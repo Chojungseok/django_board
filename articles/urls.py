@@ -13,4 +13,7 @@ urlpatterns = [
     #create
     path('new/', views.new, name= 'new'),
     path('create/', views.create, name='create'),
+
+    # delete
+    path('<int:id>/delete/', views.delete, name = 'delete'),
 ]

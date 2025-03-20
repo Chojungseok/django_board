@@ -12,6 +12,7 @@
     <div class="card-footer">
         {{article.created_at}}
     </div>
-
 </div>
+
+<a href="{% url 'articles:delete' article.id%}" class="btn btn-danger mt-2">delete</a>
 {% endblock%}
