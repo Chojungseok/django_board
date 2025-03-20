@@ -7,6 +7,7 @@
             <tr>
                 <th>제목입니다.</th>
                 <th>내용입니다.</th>
+                <th>Link</th>
             </tr>
         </thead>
         <tbody>
@@ -14,6 +15,7 @@
             <tr>
                 <td>{{article.title}}</td>
                 <td>{{article.content}}</td>
+                <td><a href="{% url 'articles:detail' article.id %}" class="btn btn-primary">detail</a></td>
             </tr>
             {% endfor %}
         </tbody>
